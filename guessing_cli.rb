@@ -3,9 +3,11 @@ def run_guessing_game
   respond = gets.chomp 
   while respond == "exit"
     puts "Goodbye!"
-    when respond == rand(1..6)
+    break
+  end
+    if respond == rand(1..6)
     puts "You guessed the correct number!"
   end
 end
-end 
+
 
