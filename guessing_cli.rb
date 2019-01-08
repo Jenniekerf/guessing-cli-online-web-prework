@@ -1,10 +1,11 @@
 def run_guessing_game
   puts "Guess a number between 1 and 6."
+  num = rand(1..6)
   respond = gets.chomp 
-   if respond == "exit"
+   while respond == num
     puts "Goodbye!"
     break
-    elsif respond == rand(1..6)
+    elsif respond == num
     puts "You guessed the correct number!"
   end
 end
