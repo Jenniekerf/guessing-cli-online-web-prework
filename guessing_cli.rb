@@ -3,7 +3,7 @@ def run_guessing_game
   respond = gets.chomp 
   while respond == "exit"
     puts "Goodbye!"
-    case respond == rand(1..6)
+    when respond == rand(1..6)
     puts "You guessed the correct number!"
   end
 end
