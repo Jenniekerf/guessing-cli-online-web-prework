@@ -4,7 +4,7 @@ def run_guessing_game
    if respond == "exit"
     puts "Goodbye!"
     break
-    case respond == rand(1..6)
+    elsif respond == rand(1..6)
     puts "You guessed the correct number!"
   end
 end
